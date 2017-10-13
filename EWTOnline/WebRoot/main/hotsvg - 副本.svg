@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+      onload = "init(evt)"
+      onmousemove="mouseMove(evt)"
+      onmouseup="mouseUp(evt)">
+<script>
+<![CDATA[
+var svgDoc = null;
+var svgRoot = null;
+var parentWnd = null;
+
+var viewportlayerobject;
+var cp;
+var mycircle;
+var frame;
+var frameshade;
+var percent;
+var imagecode;
+var redstop;
+var greenstop;
+var gMouseDown = 0;
+var scaleFactor = 1.0;
+var percentString ="";
+var maxheight;
+var zoominTextObject=null;
+var zoomoutTextObject=null;
+var prevImageObject=null;
+var nextImageObject=null;
+var imagepath;
+
+var currentFactor=100.0;
+
+function setimagecode(content)
+{
+	imagecode.firstChild.nodeValue = content;
+}
+function setimagepath(path)
+{
+	imagepath.firstChild.nodeValue = path;
+}
+
+
+function addelementevent(eventobject)
+{
+	eventobject.addEventListener("click",hotmousedown,false);
+}
+function init(evt)
+{
+  svgDoc=evt.target.ownerDocument;
+  svgRoot=svgDoc.documentElement;   
+  parentWnd = window.parent;
+  if(parentWnd.document.title == null || parentWnd.document.title == '')
+  {
+    parentWnd.opener = null ;
+    parentWnd.open('', '_self') ;
+    parentWnd.close() ;
+  }
+  svgDoc.svgWnd = window;
+  startup(evt);
+}
+function FunCallByHtmlJs(str)
+{
+  
+}
+function Click(evt)
+{
+  var id = evt.target.id ;
+  if(id == 'rect')
+  {
+    if(parentWnd)
+    {
+      parentWnd.txt.value = '' ;
+      parentWnd.FunCallBySvgJs() ;
+    }
+  }
+}
+
+function startup(evt)
+{
+ viewportlayerobject = document.getElementById("viewportlayer");
+ cp = document.getElementById("CP");
+ mycircle = document.getElementById("myCircle");
+ frame = document.getElementById("Frame");
+ frameshade = document.getElementById("FrameShade"); 
+ percent = document.getElementById("PercentText");
+ imagecode=document.getElementById("ImageCode");
+ imagepath=document.getElementById("ImagePath");
+ redstop = document.getElementById("RedStop");
+ zoominTextObject=document.getElementById("zoominText");
+ zoomoutTextObject=document.getElementById("zoomoutText"); 
+ prevImageObject=document.getElementById("prevHotImage");
+ nextImageObject=document.getElementById("nextHotImage");
+ greenstop = document.getElementById("GreenStop");
+ maxheight=window.screen.height-window.screenTop;
+ frame.setAttributeNS(null,"cx",maxheight-180);
+ frameshade.setAttributeNS(null,"cx",maxheight-180);
+ zoominTextObject.setAttributeNS(null,"x",maxheight-225);
+ zoomoutTextObject.setAttributeNS(null,"x",maxheight-147);
+ prevImageObject.setAttributeNS(null,"x",maxheight-187);
+ nextImageObject.setAttributeNS(null,"x",maxheight-147);
+    
+ frame.setAttributeNS(null,"cy",maxheight-150);
+ frameshade.setAttributeNS(null,"cy",maxheight-150);
+ zoominTextObject.setAttributeNS(null,"y",maxheight-145);
+ zoomoutTextObject.setAttributeNS(null,"y",maxheight-145);
+ prevImageObject.setAttributeNS(null,"y",20);
+ nextImageObject.setAttributeNS(null,"y",20);
+ 
+ mycircle.setAttributeNS(null,"cx",maxheight-180);
+ mycircle.setAttributeNS(null,"cy",maxheight-150);
+ percent.setAttributeNS(null,"x",maxheight-195);
+ percent.setAttributeNS(null,"y",maxheight-147);
+ imagecode.setAttributeNS(null,"x",20);
+ imagecode.setAttributeNS(null,"y",maxheight-110);
+ imagepath.setAttributeNS(null,"x",20);
+ imagepath.setAttributeNS(null,"y",20); 
+}
+
+function mouseMove(evt)
+{
+  if(!gMouseDown) return;
+  var x = evt.clientX;
+  var y = evt.clientY;
+
+  mycircle.setAttributeNS(null,"cx", x);
+  mycircle.setAttributeNS(null,"cy", y);
+  frame.setAttributeNS(null,"cx", x);
+  frame.setAttributeNS(null,"cy", y);
+  frameshade.setAttributeNS(null,"cx", x);
+  frameshade.setAttributeNS(null,"cy", y);
+
+  resizeImage(x,y);
+}
+
+function mouseDown(evt)
+{
+  gMouseDown = 1;
+  modifyPercentText();
+}
+
+function mouseUp(evt)
+{
+  gMouseDown = 0;
+}
+function zoomInByInter()
+{
+  currentFactor=currentFactor/1+10;
+  factor=currentFactor/100;
+  scaleFactor=factor;
+  //scaleFactor = parseInt(scaleFactor);
+  modifyPercentText();
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+}
+function zoomOutByInter()
+{
+  /*if(scaleFactor <= 0.5) {
+    scaleFactor = 0.5;
+    return;
+  }*/
+  currentFactor=currentFactor/1-10;
+  factor=currentFactor/100;
+  scaleFactor=factor;
+  //if(scaleFactor>=2) scaleFactor-=0.3;
+  //else scaleFactor-=0.1;
+  modifyPercentText();
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+}
+function zoomIn(factor)
+{
+  scaleFactor=factor;
+  //scaleFactor = parseInt(scaleFactor);
+  modifyPercentText();
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+}
+function resetZoom()
+{  
+  scaleFactor=1.0;
+  //scaleFactor=parseInt(scaleFactor);
+  modifyPercentText();
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+  frame.setAttributeNS(null,"cx",55);
+  frameshade.setAttributeNS(null,"cx",55);
+  frame.setAttributeNS(null,"cy",maxheight-200);
+  frameshade.setAttributeNS(null,"cy",maxheight-200);
+  mycircle.setAttributeNS(null,"cx",55);
+  mycircle.setAttributeNS(null,"cy",maxheight-200);
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+  
+}
+function zoomOut(factor)
+{
+  /*if(scaleFactor <= 0.5) {
+    scaleFactor = 0.5;
+    return;
+  }*/
+  scaleFactor=factor;
+  //if(scaleFactor>=2) scaleFactor-=0.3;
+  //else scaleFactor-=0.1;
+  modifyPercentText();
+  var x = mycircle.getAttributeNS(null,"cx");
+  var y = mycircle.getAttributeNS(null,"cy");
+  resizeImage(x,y);
+}
+
+function resizeImage(x,y)
+{   
+  var newx = x - scaleFactor*x;
+  var newy = y - scaleFactor*y;
+
+  var tx = "translate(" + newx + "," + newy 
+             + "),scale(" + scaleFactor + "," + scaleFactor +")";
+  viewportlayerobject.setAttribute("transform", tx);
+}
+
+function modifyPercentText()
+{
+  var s = percentString + parseInt(scaleFactor*100) +"%";
+  percent.firstChild.nodeValue = s;
+}
+
+function mouseOverRed()
+{
+  redstop.setAttributeNS(null,"stop-color", "white"); 
+}
+
+function mouseOverGreen()
+{
+  greenstop.setAttributeNS(null,"stop-color", "white"); 
+}
+
+function mouseOutRed()
+{
+  redstop.setAttributeNS(null,"stop-color", "red"); 
+}
+
+function mouseOutGreen()
+{
+  greenstop.setAttributeNS(null,"stop-color", "green"); 
+}
+function openPrevImage()
+{
+	parentWnd.goPrevImage();
+}
+function openNextImage()
+{
+	parentWnd.goNextImage();
+}
+function setprevimagedisplay(displayvalue)
+{
+	prevImageObject.setAttributeNS(null,"display", displayvalue); 
+}
+function setnextimagedisplay(displayvalue)
+{
+	nextImageObject.setAttributeNS(null,"display", displayvalue); 
+}
+//]]>
+</script>
+<rect width="100%" height="100%" fill="white" 
+onmousedown="mouseDown(evt)" 
+onmousemove="mouseMove(evt)"
+onmouseup="mouseUp(evt)"/>
+
+<mask id="M">
+<rect width="100%" height="100%" fill="white" opacity="0.5"/>
+</mask> 
+<!--<use xlink:href="#viewport" mask="url(#M)" id="userimage"/>-->
+<clipPath id="CP">
+  <circle id="myCircle" cx="10" cy="10" r="50" style="display:none"/>
+</clipPath>
+
+<g id="viewportlayer" 
+    onmouseup="mouseUp(evt)"
+    onmousedown="mouseDown(evt)">
+ <!--<use xlink:href="#viewport" clip-path="url(#CP)" opacity="1.0"/>-->
+ <g id="viewport">
+  <image x="0" y="0" width="100%" height="100%" xlink:href="" id="myimage" title=""></image>
+</g>
+</g>
+ <a xlink:href=""> 
+ <circle id="Frame"  cx="55" cy="10" r="30" fill="white" fill-opacity="0" stroke-dasharray="1" stroke="gray" stroke-width="1" />
+ <circle id="FrameShade" cx="55" cy="10" r="30" fill="white" fill-opacity="0" stroke="white" stroke-dasharray="1"  stroke-width="1" />
+ </a>
+<!-- text % -->
+<text id="PercentText" x="10" y="10" font-size="9pt" fill="black" font-family="Arial" font-weight="bolder">100%</text>
+<text id="ImageCode" x="10" y="10" font-size="9pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman"> </text>
+<text id="ImagePath" x="10" y="10" font-size="9pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman"> </text>
+<a xlink:href=""><text onmousedown="zoomOutByInter()" id="zoominText" x="10" y="10" font-size="12pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman" font-weight="bolder">-</text></a>
+<a xlink:href=""><text onmousedown="zoomInByInter()" id="zoomoutText" x="10" y="10" font-size="12pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman" font-weight="bolder">+</text></a>
+<a xlink:href=""><text display="none" onmousedown="openPrevImage()" id="prevHotImage" x="10" y="10" font-size="12pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman" font-weight="bolder">&lt;</text></a>
+<a xlink:href=""><text display="none" onmousedown="openNextImage()" id="nextHotImage" x="10" y="10" font-size="12pt" fill="black" font-family="Verdana, Tahoma, Arial, Sans Serif, Times New Roman" font-weight="bolder">&gt;</text></a>
+<defs>
+<g id="viewport">
+  <image x="0" y="0" width="100%" height="100%" xlink:href="" id="myimage" title=""></image>
+</g>
+</defs>
+</svg>

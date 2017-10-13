@@ -1,0 +1,29 @@
+body {
+	background: #ffffff;	
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 14px;
+	line-height: 1.6;
+}
+#content {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	background: #FFF;	
+	border: 1px solid #CCC;
+}
+h1 {
+	margin: 0;
+}
+
+hr {
+	border: none;
+	height: 1px; line-height: 1px;
+	background: #CCC;	
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+p {
+	margin: 0;	
+	padding: 0px 0;
+}

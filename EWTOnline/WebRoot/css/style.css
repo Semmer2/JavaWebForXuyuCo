@@ -1,0 +1,107 @@
+html, body{
+    min-height:100%;
+    height:auto !important;
+    height:100%;
+}
+
+body{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+    color:#333;
+    padding:0;
+}
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+
+body *{
+    line-height:1.22em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+    color:#34538b;
+    clear:both;
+}
+
+h2{
+    color:#cad5eb;
+	margin-top:-25px;
+}
+
+h3{
+	margin:25px 0 10px;
+}
+
+h4{
+    color:#333;
+    margin-bottom:-10px;
+}
+
+p{
+    margin:10px 0;
+    clear:both;
+}
+
+ul, ol{
+    margin-left 0;
+}
+
+ul ul{
+    margin-bottom:20px;
+}
+
+#wrap{
+    color:#404040;
+    /*margin:0 12%;*/
+    margin:20px 40px;
+}
+
+a{
+    color:#34538b;
+}
+
+table{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    border:1px solid #c8c8c8;
+}
+
+th{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    background:#d8d8d8;
+    text-align:left;
+    padding:5px;
+    white-space:nowrap;
+}
+
+td{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    background:#f8f8f8;  
+    padding:1px;
+}
+
+select, input, textarea{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+}
+
+pre, code, tt, dt{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    margin:20px 0;
+}
+
+pre, blockquote{
+    padding:15px;
+    background-color:#f0f0f0;
+    margin:20px 0;
+	border:1px solid #dddddd;
+    -moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+
+td pre{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    padding:5px;
+    margin:5px 0;
+}
+li{padding-bottom:1px;}

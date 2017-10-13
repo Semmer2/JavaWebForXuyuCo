@@ -1,0 +1,240 @@
+thead .arrow {font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";  color: black; padding: 0; font-size: 10px;
+width: 10px; overflow: hidden;
+margin-bottom: 2; margin-top: -3; padding: 0; padding-top: 0; padding-bottom: 2;}
+<!--
+不要把10pt替换成8pt，不然datagrid 在点击时会跳动荡不安
+-->
+thead td {
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	color: #000000;
+	background-color: #b7d6ec;
+	cursor: default; 
+	font-size: 10pt;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #69AF9F;
+	border-bottom: 1px solid #69AF9F;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:bottom;
+	height:25px; 
+}
+.lefttd
+{
+	padding-left:10px;	
+}
+.input{
+      BORDER-RIGHT: #999999 1px solid;
+      BORDER-TOP: #999999 1px solid;
+      FONT-SIZE: 10pt;
+      BACKGROUND-ATTACHMENT: fixed;
+      BORDER-LEFT: #999999 1px solid;
+      BORDER-BOTTOM: #999999 1px solid
+}
+
+
+.tableHead {
+    position:relative;
+    text-align: center;
+    background-color:#b7d6ec;
+    text-align: center;
+    background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat;
+    background-position:bottom;
+    height:25px;
+}
+.tableHead2row {
+    position:relative;
+    text-align: center;
+    background-color:#b7d6ec;
+    text-align: center;
+    background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat;
+    background-position:bottom;
+    height:50px;
+}
+.tableHead3row {
+    position:relative;
+    text-align: center;
+    background-color:#b7d6ec;
+    text-align: center;
+    background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat;
+    background-position:bottom;
+    height:125px;
+}
+.custormGridTable
+{
+	border: silver 0px solid;
+	background-color: silver;
+}
+
+.gridTable
+{
+	background-color: #c0c0c0;
+    table-layout:fixed;
+    word-wrap:break-word
+}
+
+
+.customGridHeader1
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	color: #ffffff;
+	background-color: #ddddee;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:bottom;
+	height:25px; 
+}
+.customGridHeader
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #ddddee;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:bottom;
+	height:25px; 
+}
+
+.gridHeader
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #ffffff;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:bottom;
+	height:25px; 
+}
+
+.gridRow
+{
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.gridRowEven
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.gridRowOdd
+{
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.gridNewRow
+{
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.gridRowOdd1
+{
+	color: #000000;
+	background-color: #ffffff;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-weight: normal;
+}
+
+.gridPageOfPage
+{
+	color: #000000;
+	BACKGROUND-COLOR: #ffffff;		
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 10pt;
+	height:26px;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:top; 
+}
+
+.gridPager
+{
+	BACKGROUND-COLOR: #ffffff;
+}
+
+.gridSort
+{
+	color: #ffffff;
+	background-color: #ffffff;
+	text-decoration: none;
+	background: url("/EWTOnline/images/datagrid/grid_head_bg.gif") repeat-x;
+	background-position:bottom;
+	height:25px; 
+}
+
+.tableData {
+        BACKGROUND: white;
+        BORDER-BOTTOM: white 1px dashed;
+        BORDER-LEFT: white 1px dashed;
+        BORDER-RIGHT: white 1px dashed;
+        BORDER-TOP: white 1px dashed;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+        FONT-SIZE: 10pt
+}
+
+.inputData{
+      BORDER-RIGHT: #ffffff 1px solid;
+      BORDER-TOP: #ffffff 1px solid;
+      FONT-SIZE: 10pt;
+      BACKGROUND-ATTACHMENT: fixed;
+      background-color: #ffffff;
+      BORDER-LEFT: #ffffff 1px solid;
+      BORDER-BOTTOM: #ffffff 1px solid
+}
+
+.tableDataSel {
+      BACKGROUND: #6090d0; BORDER-BOTTOM: #6090d0 1px dashed; BORDER-LEFT: #6090d0 1px dashed; BORDER-RIGHT: #6090d0 1px dashed; BORDER-TOP: #6090d0 1px dashed; COLOR: white; CURSOR: hand; FONT-FAMILY: verdana,arial,helvetica; FONT-SIZE: 10pt
+}
+
+.tableDataHit {
+        BACKGROUND: #F5F5F5;
+        BORDER-BOTTOM: #d0e0ff 1px dashed;
+        BORDER-LEFT: #d0e0ff 1px dashed;
+        BORDER-RIGHT: #d0e0ff 1px dashed;
+        BORDER-TOP: #d0e0ff 1px dashed;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+        FONT-SIZE: 10pt
+}
+
+.newRow {
+        BACKGROUND: #eeeeee;
+        BORDER-BOTTOM: #eeeeee 1px dashed;
+        BORDER-LEFT: #eeeeee 1px dashed;
+        BORDER-RIGHT: #eeeeee 1px dashed;
+        BORDER-TOP: #eeeeee 1px dashed;
+        COLOR: black;
+        FONT-FAMILY: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+        FONT-SIZE: 9pt
+}
+.gridColumn{
+}
+.div_scrollbar {
+	scrollbar-face-color: #379be9; scrollbar-shadow-color: #ffffff; scrollbar-highlight-color: #ffffff; scrollbar-3dlight-color: #379be9; scrollbar-darkshadow-color: #379be9; scrollbar-track-color: #ffffff; scrollbar-arrow-color: #ffffff
+}
+
+html {
+	scrollbar-face-color: #379be9; scrollbar-shadow-color: #ffffff; scrollbar-highlight-color: #ffffff; scrollbar-3dlight-color: #379be9; scrollbar-darkshadow-color: #379be9; scrollbar-track-color: #ffffff; scrollbar-arrow-color: #ffffff
+}
+a {
+	color: rgb(1, 95, 182); text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}

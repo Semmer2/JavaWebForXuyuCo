@@ -1,0 +1,133 @@
+.div_scrollbar {
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+
+html {
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+/*滚动条样式*/
+BODY
+{
+  font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+  background-color: White;
+  color: black; 
+  font-size: 10px;
+  scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+H1
+{
+  color: black;
+  font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+  font-size: x-large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+H2
+{
+  color: black;
+  font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+  font-size: large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+H3
+{
+  color: black;
+  font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+  font-size: large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.TabbedPanelsTabSelected {
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size: 12px;
+	color: #005537;
+	text-decoration: none;
+        FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,  
+                StartColorStr=#ffffff, EndColorStr=#71C5B4);  
+}
+
+.btn { 
+    BORDER-RIGHT: #6666CC 1px solid;  
+    PADDING-RIGHT: 2px;  
+    BORDER-TOP: #6666CC 1px solid;  
+    PADDING-LEFT: 2px;  
+    FONT-SIZE: 12px;  
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,  
+                StartColorStr=#ffffff, EndColorStr=#71C5B4);  
+    BORDER-LEFT: #6666CC 1px solid;  
+    CURSOR: hand;  
+    COLOR: black;  
+    PADDING-TOP: 2px;  
+    BORDER-BOTTOM: #6666CC 1px solid 
+} 
+
+.cuteLable{
+    FONT-SIZE: 12px;
+    text-align:center;
+    background-color : #e3fffc;
+}
+
+.cuteControl{
+    FONT-SIZE: 12px;
+    text-align:left;
+    background-color : #FFFFFF;
+}
+div.contb   {   
+    border-top:none;
+    margin-left:auto;   
+    margin-right:auto;   
+    width:100%;   
+    overflow:auto;   
+    border:0px   solid   #000000;   
+    clear:left;
+}
+.tbhead tr {   
+    z-index:100;   
+    position:relative;   
+    top:expression(document.getElementById("contb").scrollTop);   
+}   
+
+.ellipsis_row{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    wzy:expression(
+        this.title=this.offsetWidth<this.children(0).offsetWidth? this.children(0).innerText:'',
+        this.style.wzy=''
+    );
+}
+
+a:link,a:visited,a:active {
+	color: #307663; 
+        text-decoration: none;
+}
+
+a:hover {
+	color: #307663;
+        font-weight: bolder;
+}
+
+.linkhref{
+    color:#307663;
+    cursor:hand;
+}

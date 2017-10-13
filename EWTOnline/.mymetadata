@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="EWTOnline"
+  id="myeclipse.1388757165817"
+  context-root="/EWTOnline"
+  j2ee-spec="5.0"
+  archive="EWTOnline.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

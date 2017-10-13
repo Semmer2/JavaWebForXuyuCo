@@ -1,0 +1,16 @@
+/*Çå³ý¸¡¶¯*/
+.clear{
+	height:0px;
+	line-height:0px;
+	font-size:0px;
+	clear:both;
+	}
+body{ background:#ffffff;}
+.input_text{border:solid 1;margin:5px;padding:10px;width:300px;}
+.short_input_text{border:solid 1;width:150px;}
+.short_input_text1{border:solid 1;width:150px;height:21px;padding-top:2px}
+.login-btn{border:solid 0;cursor:hand;margin:5px;padding:5px;width:75px; height:35px; background:url(signin.jpg)}
+.query-btn{border:solid 0;cursor:hand;margin:5px;padding:5px;width:54px; height:27px; background:url(query.jpg)}
+#message-box{ height:30px; width:300px; background:#f81900; position:absolute; right:0px; line-height:30px; text-align:center; display:none} 
+
+

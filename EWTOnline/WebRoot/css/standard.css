@@ -1,0 +1,812 @@
+/*
+'*程序功能：用于设定Web页面的Css
+'*作    者：张远来
+'*修改时间：2002/12/26
+*/
+.div_scrollbar {
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+
+html {
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+BODY
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+    FONT-SIZE: 10pt;
+    margin-top:0;
+    margin-left:0;
+    scrollbar-shadow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-face-color: #d9d9d9;
+	scrollbar-3dlight-color: #d9d9d9;
+	scrollbar-darkshadow-color: #d9d9d9;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #000000
+}
+.ToolBarBody   
+{
+    FONT-SIZE: 12pt;
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";         
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#D9D9D9;	
+	}
+.MainBody	/*工作区Body*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#Deebff;	
+}
+.ListMainBody  /*列表工作区Body*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#FFFFFF;	
+	}
+.StatusBody   /*状态栏BoDy*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#4662a2;	    	
+	}
+.TitleBody    /*标题栏BoDy*/ 
+{
+	margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#4662a2;	   
+	}		
+.TreeBody  /*栏目树Body*/
+{
+  margin-left:10;
+  font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+  font-size:9pt;
+  background-color:#FCF9EB; 
+  
+	}	
+.FlowBody  /*流程主页面Body*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#fefcf6;		
+	}
+.EditBODY
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BACKGROUND: buttonface;
+    MARGIN: 0px;
+    BORDER-LEFT: 0px;
+    CURSOR: default;
+    BORDER-BOTTOM: 0px;
+    FONT-SIZE: 9pt
+	}	
+.coolBar
+{
+    BORDER-RIGHT: buttonface 0px solid;
+    BORDER-TOP: buttonface 0px solid;
+    DISPLAY: block;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: buttonface 0px solid;
+    BORDER-BOTTOM: buttonface 0px solid
+}	
+.FixTable
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;  
+    TABLE-LAYOUT:fixed;  
+    Z-INDEX: 1
+	}
+IMG
+{
+	border: 0
+}
+
+FORM
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+DIV
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%  
+}
+.statusDiv
+{
+	color:#ffffff;
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+	
+}
+.TitleDiv   /*题头字Div*/
+{
+	color:#ffffff;
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 22pt;
+    font-weight:bold;
+	}
+.trWorkListtitle   /*myWork标题行*/
+{
+ BORDER-TOP: #7c9ccf 1px solid; 
+ FONT-WEIGHT: bold; 
+ FONT-SIZE: 9pt; 
+ BACKGROUND: #8caae7; 
+ COLOR: #ffffff; 
+ BORDER-BOTTOM: #7c9ccf 1px solid; 
+ font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";  
+ HEIGHT: 18px; 
+ TEXT-ALIGN: center	
+	}
+.tdWorkListtitle  /*myWork标题表格*/
+{
+  BORDER-RIGHT: #999999 1px solid; 
+  PADDING-RIGHT: 2px; 
+  BORDER-TOP: #999999 1px solid; 
+  PADDING-LEFT: 2px; 
+  PADDING-BOTTOM: 2px;
+  BORDER-LEFT: #999999 0px solid; 
+  PADDING-TOP: 2px; 
+  BORDER-BOTTOM: #999999 1px solid
+}	
+.tbWorkframe   /*myWork表格边框*/
+{
+	BORDER-RIGHT: #7c9ccf 1px solid;
+	BORDER-TOP: #7c9ccf 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #7c9ccf 1px solid; 
+	BORDER-BOTTOM: #7c9ccf 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	BACKGROUND-COLOR: #ffffff
+}	
+.tdWorkList  /*myWork的表格*/
+{
+	PADDING-RIGHT: 4px;
+    PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+.divWorktbtitletext /*myWork的表格标题文字*/
+ {
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: "Arial"
+}
+.tbWorktoolbar   /*myWork标题工具*/
+{
+	BORDER-RIGHT: #253e82 0px double; 
+	BORDER-TOP: #253e82 0px double; 
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; 
+	PADDING-BOTTOM: 3px; 
+	BORDER-LEFT: #253e82 0px double; 
+	BORDER-BOTTOM: #253e82 1px double; 
+	BORDER-COLLAPSE: collapse
+}
+.tdWorkRow   /*mywork工作行*/
+{
+	PADDING-RIGHT: 4px; 
+	PADDING-LEFT: 4px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px
+}
+.titlebar   /*标题*/
+{
+	PADDING-LEFT: 10px; 
+	MARGIN-BOTTOM: 5px; 
+	FONT: bold 14px/20px "Arial"; 
+	WIDTH: 100%; 
+	COLOR: #000000; 
+	PADDING-TOP: 2px; 
+	BACKGROUND-COLOR: #D9D9D9
+}
+.tdFlowframe  /*流程边框*/
+{
+	BORDER-RIGHT: #ec6b76 1px solid;
+	BORDER-TOP: #ec6b76 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #ec6b76 1px solid; 
+	BORDER-BOTTOM: #ec6b76 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	BACKGROUND-COLOR: #fcf9eb	
+	}	
+.tdFlowArchive  /*归档流程边框*/
+{
+	BORDER-RIGHT: #ec6b76 1px solid;
+	BORDER-TOP: #ec6b76 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #ec6b76 1px solid; 
+	BORDER-BOTTOM: #ec6b76 1px solid; 
+	BORDER-COLLAPSE: collapse; 	
+	}		
+.FlowTitle
+{
+	PADDING-LEFT: 10px; 
+	MARGIN-BOTTOM: 5px; 
+	FONT: bold 14px/20px "Arial"; 
+	WIDTH: 100%; 
+	COLOR: #000000; 
+	PADDING-TOP: 2px;
+	text-align:center 
+	/*BACKGROUND-COLOR: #D9D9D9	*/
+	}		
+	
+P
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 100%
+}
+.Ptitle
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";     	
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+HR
+{
+    COLOR: black;	
+}
+.hrRow
+{    
+    BORDER-TOP: 1px;    
+    COLOR:black;
+}
+TH
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+
+}
+LI
+{    
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+    
+}
+
+ INPUT
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;    
+}
+
+SELECT
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+}
+
+TEXTAREA
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+OPTION
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+ 
+}
+
+UL
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+CAPTION
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+TABLE
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+   /* TABLE-LAYOUT:fixed; */
+    Z-INDEX: 1
+}
+TD
+{
+    FONT-SIZE: 9pt
+}
+
+.rowover
+{
+    BEHAVIOR: url(rowover.htc)
+}
+.sel
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt
+}
+
+.chbNoColor
+{
+    HEIGHT: 15px;
+    WIDTH: 15px
+}
+.chbColor
+{
+    HEIGHT: 15px;
+    WIDTH: 15px
+}
+.rbNoColor
+{
+	HEIGHT: 15px;
+	}
+.rbColor
+{
+	}
+
+.lbNoColor
+{
+	text-decoration: none;
+	
+	}
+.lbBgColor	
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 12pt;	
+    font-weight:bold;
+    BACKGROUND: #Deebff;
+    /*BORDER-BOTTOM: black 1px solid;        */
+    /*BORDER-TOP: white 1px solid;  */
+    COLOR: #BF141A;
+    LINE-HEIGHT: 150%;
+    HEIGHT: 15px;
+	}	
+
+.lbForeColor
+{
+ font-size: 9pt;
+ line-height: 15pt; 
+ font-weight: normal; 
+ color: #000099; 
+ text-decoration: none;
+ HEIGHT: 15px;
+}
+
+.lbError
+{
+	color: #ff0000;
+	text-decoration: none;
+}
+.Title
+{
+	font-weight: bold;
+	color: #000000;
+	font-size :medium;	
+	}
+.btnLower
+{
+    BACKGROUND-COLOR: #D6E7EF;
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset
+}
+.btnRaise
+{
+    BACKGROUND-COLOR: #D6E7EF;    
+    COLOR: #0000a0;    
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    HEIGHT: 24px;
+}
+.btnNone
+{
+    BACKGROUND-COLOR: #D6E7EF;
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    COLOR: #0000a0;
+    FONT-FAMILY: 楷体_GB2312;
+    FONT-SIZE: 14px;
+    HEIGHT: 24px;
+    WIDTH: 100%
+}
+.btnBevel
+{
+    BACKGROUND-COLOR: #D6E7EF;
+    COLOR: #000080;
+    HEIGHT: 22px;
+    TOP: 1px;    
+    LINE-HEIGHT: 9pt;  
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;  
+    PADDING-TOP: 2px;
+    PADDING-BOTTOM: 2px;
+    CURSOR: hand;
+    BORDER-BOTTOM-STYLE: groove;
+    BORDER-LEFT-STYLE: groove;
+    BORDER-RIGHT-STYLE: groove;
+    BORDER-TOP-STYLE: groove; 
+}
+
+
+
+.trRow
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;	 	 
+    BACKGROUND: Gray;
+    BORDER-BOTTOM: #708090 1cm solid;
+    LINE-HEIGHT: 150%
+}
+.tdCell
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;	 	 
+    BACKGROUND: #EFF7FF;
+    BORDER-BOTTOM: #708090 1px groove;
+    LINE-HEIGHT: 150%
+}
+
+.tdLeft
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #E7F3F7;
+    BORDER-BOTTOM: #708090 1px groove;    
+    LINE-HEIGHT: 150%
+}
+.tdRight
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #CAF5FB;    
+    LINE-HEIGHT: 150%
+}
+.tdBottom
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #D6E7EF;      
+    BORDER-BOTTOM: black 1px solid;   
+    LINE-HEIGHT: 150%;
+    TEXT-ALIGN: right;
+}	
+.tbLower
+{	
+	background:white;
+	BORDER-BOTTOM: gray 2px solid; 
+	BORDER-LEFT: black 2px solid; 
+	BORDER-RIGHT: gray  2px solid; 
+	BORDER-TOP: black 2px solid
+	}
+.tableRaise
+{
+	FONT-SIZE: 9pt;
+    LINE-HEIGHT: 12pt;
+    BACKGROUND: #ebf3f5;
+    BORDER-BOTTOM: #30404f 3px solid;
+    BORDER-LEFT: #b8d2e9 3px solid;
+    BORDER-RIGHT: #30404f 3px solid;
+    BORDER-TOP: #b8d2e9 3px solid;    
+}
+.tableLower
+{
+	FONT-SIZE: 9pt;
+    LINE-HEIGHT: 12pt;
+    BACKGROUND: #fcf9eb;
+    BORDER-BOTTOM: #ec6b76 1px inset;
+    BORDER-LEFT: #ec6b76 1px inset;
+    BORDER-RIGHT: #ec6b76 1px inset;
+    BORDER-TOP: #ec6b76 1px inset;    
+	}
+.tableBevel
+{
+ FONT-SIZE: 9pt;
+ LINE-HEIGHT: 12pt;
+ BORDER-RIGHT: #eeeeee 1px solid; 
+ BORDER-TOP: #eeeeee 1px solid; 
+ BORDER-LEFT: #eeeeee 1px solid; 
+ BORDER-BOTTOM: #eeeeee 1px solid	
+	}	
+.tbTitleRaise
+{ 
+ BACKGROUND-COLOR: #6699CC;
+ COLOR: #ffe6ab;
+ font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+ FONT-SIZE: 10.5pt 
+	}
+.tbTitleLower
+{
+	}	
+.tbTitleNone
+{
+	}
+/*Table数据表格：用于显示查询结果集*/	
+.dbTable  /*表线*/
+  {
+	BORDER-RIGHT: #2c9096 1px solid;
+	BORDER-TOP: #2c9096 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #2c9096 1px solid; 
+	BORDER-BOTTOM: #2c9096 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	}
+
+/*DataGrid数据表格：用于显示查询结果集，可排序和翻页-------Begin*/
+/*表线*/
+.dbGrid
+{
+	border-color:darkblue;
+	border-style:groove;
+	border-left-color:#2c9096;	
+	border-top-color:#2c9096;
+	border-Right-color:#2c9096;
+	border-Bottom-color:#2c9096;	
+	}
+/*表头*/
+.dbGridHeader
+{
+	font-weight: bold;
+	color: #000000; 
+	/*color:#ffe6ab;*/
+	background-color:#fcf7e5;	
+	border-style:groove;
+	border-color:#2c9096;
+	border-left-color:darkblue;	
+	border-top-color:darkblue;
+	border-Right-color:darkblue;
+	border-Bottom-color:darkblue;
+}
+/*表格*/
+.dbGridItems
+{	
+    background-color:lightwhite; 
+	/*color: #000000;*/
+	/*background-color: #deebff;*/
+}
+/*序号列*/
+.dbGridSNCell
+{
+	
+}
+/*选中的行*/
+.dbGridSelectEd
+{	
+
+}
+/*交替行*/
+.dbGridAlter
+{  
+	background-color:#E6E6E6; 
+	
+}
+/*图片按钮*/
+.DataQryImgbtn
+{
+	cursor: hand;
+	border: solid 1px #808080;
+	padding: 1px;
+	width: 18px;
+	height: 18px;
+	background: url(../Images/Button_Back.gif) center;
+}
+/*下啦匡*/
+.DataQryDropLst
+{
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 100%;
+}
+/*主要标题*/
+.DataQrylbTitle
+{
+	font-weight: bold;
+	font-size: 22px;
+	/*color:#ffffce;*/
+	color: #000000;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+}
+/*福标题*/
+.DataQrylbTitleAdd
+{
+	font-size: 12px;
+	color: #000000;
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+}
+/*左标题,右标题,纪录描述*/
+.DataQrylbMsg
+{
+	font-size: 12px;
+	color: #000000;
+}
+/*数据表格-----------------------------------------------------End*/	
+/*日历用的Css设置-----------Begin*/
+.DateCalbody      /*日历主体*/
+ {
+	/*BACKGROUND: #ffffff*/
+	}
+.DateCaltoday    /*日历今天*/
+{
+	font-weight:bold;
+	BACKGROUND: #6699cc
+	}
+.DateCalsatday   /*日历星期六列*/
+{
+	color:red
+	}
+.DateCalsunday   /*日历星期日列*/
+{
+	color:red
+	}
+.DateCalsdays   /*日历日子*/
+ {
+	BACKGROUND: gray;
+	}
+ .DateCalselect  /*选中的日子*/
+ {
+	font-weight:bold;
+	BACKGROUND: gray;
+	}
+/*日历用的Css设置-----------End*/
+.TxtBevel
+{
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid;
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 1pt;
+    PADDING-LEFT: 1pt;
+    PADDING-RIGHT: 1pt;
+    PADDING-TOP: 1pt;
+    HEIGHT: 20PX	
+	}
+.TxtRaise
+{
+	BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-TOP-WIDTH: 1px;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+	}
+.TxtLower
+{    
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset	
+	}	
+.TxtNone
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;	
+	}	
+.LstBevel
+{
+	border-top:solid black 1px;
+	border-bottom:solid white 1px;
+	border-right:solid white 1px;
+	border-Left:solid black 1px;
+	OVERFLOW:auto
+}
+
+.LstNone
+{ 
+ BORDER-BOTTOM-STYLE: none; 
+ BORDER-LEFT-STYLE: none; 
+ BORDER-RIGHT-STYLE: none;
+ BORDER-TOP-STYLE: none; 
+ OVERFLOW: auto;	
+}
+
+.LstRaise
+{    
+    COLOR: #0000a0;
+    font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman"; 
+    FONT-SIZE: 9pt;
+    OVERFLOW: auto;	
+}
+.LstLower
+{
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset		
+	}
+	
+A:link
+{
+	color: #003399;
+	text-decoration: none;
+}
+
+A:visited
+{
+	color: #003399;
+	text-decoration: none;
+}
+
+A:active
+{
+	color: #CC3300;
+	text-decoration: none;
+}
+
+A:hover
+{
+	color: #CC3300;
+	text-decoration: none;
+}  
+
+.btn { 
+    BORDER-RIGHT: #6666CC 1px solid;  
+    PADDING-RIGHT: 2px;  
+    BORDER-TOP: #6666CC 1px solid;  
+    PADDING-LEFT: 2px;  
+    FONT-SIZE: 12px;  
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,  
+                StartColorStr=#ffffff, EndColorStr=#5e9dd7);  
+    BORDER-LEFT: #6666CC 1px solid;  
+    CURSOR: hand;  
+    COLOR: black;  
+    PADDING-TOP: 2px;  
+    BORDER-BOTTOM: #6666CC 1px solid 
+}
+#screen_shadow{
+   position:absolute; 
+   left:0;
+   top:0;
+   width:100%;
+   height:100%;
+   background-color:#0060C0;
+   filter:alpha(opacity=20);
+}
+#screen_box{
+   position:absolute;
+   left:50%;
+   top:50%;
+   width:100px;
+   height:100px;
+   margin:-50px 0 0 -50px;
+   border:1px solid #84A0C4;
+   background-color:#DFE8F6;
+   text-align:center;
+}

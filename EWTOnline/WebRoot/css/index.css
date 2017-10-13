@@ -1,0 +1,63 @@
+.gray { 
+-webkit-filter: grayscale(100%); 
+-moz-filter: grayscale(100%); 
+-ms-filter: grayscale(100%); 
+-o-filter: grayscale(100%); 
+filter: grayscale(100%); 
+filter: gray; 
+} 
+.loading {
+	background: transparent url(../images/loading.gif) 50% 50% no-repeat;
+}
+
+.bar {
+	background-Image: url(../images/titlebar.png);
+	background-Repeat: repeat;
+	margin: 0px;
+	text-align:right;	
+}
+
+.loginimage {
+	background-Image: url(../images/jl.png);
+	background-Repeat: no-repeat;
+	margin: 0px;
+    padding:5px;
+}
+
+
+.bluetd {
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	background:#379be9;
+	color: #ffffff;
+	padding:2px;
+	vertical-align:middle;
+	font-size:10pt;
+}
+.nobordtable
+{
+	border-left:0;
+	border-right:0;
+	border-top:0;
+	border-bottom:0;
+}
+.whitetd
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size:10pt;
+}
+.conrolsvgtd {
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	color: #000000;
+	background-color: #b7d6ec;
+	cursor: default; 
+	font-size: 10pt;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #69AF9F;
+	border-bottom: 1px solid #69AF9F;
+	background: url("/EWTOnline/images/grid_head_bg_y.gif") repeat-y;
+}
+body
+{
+	font-family: Verdana, Tahoma, Arial, "Sans Serif", "Times New Roman";
+	font-size:10pt;

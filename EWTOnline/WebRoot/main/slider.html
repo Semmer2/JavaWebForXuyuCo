@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>Ext Slider Example</title>
+		<link rel="stylesheet" href="../css/slider/ext-all-gray.css" />
+		<link rel="stylesheet" href="../css/slider/app.css" />
+		<script src="../scripts/slider/ext-all.js"></script>
+		<script src="../scripts/slider/app.js"></script>
+		<script language="javascript">
+function addvalue() {
+	var currentvalue = myslider.getValue();
+	var value = currentvalue + 30;
+	myslider.setValue(value);
+}
+</script>
+	</head>
+	<body>
+		<table style="padding: 0px; margin: 0px" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<td align="center">
+					<button id="button1" onclick="addvalue()">
+						+
+					</button>
+				</td>
+				<tr>
+					<td align="center">
+						<div id="slider1" onclick="alert(myslider.getValue());"></div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="top">
+						<button id="button2">
+							-
+						</button>
+					</td>
+				</tr>
+		</table>
+	</body>
+</html>

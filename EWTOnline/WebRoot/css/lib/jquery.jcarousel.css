@@ -1,0 +1,107 @@
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel-container-vertical {
+	width: 120px;
+	height: 400px;
+	background: #e8e8e8;
+	border: 1px solid #fff;
+	margin: 0px;
+}
+
+.jcarousel-clip-vertical {
+	top: 15px;
+	width: 120px;
+	height: 360px;
+	margin: 0px;
+	z-index: 20;
+}
+
+#mycarousel li,.jcarousel-item-vertical,.jcarousel-item-placeholder-vertical
+	{
+	width: 120px;
+	height: 102px;
+	margin: 0px;
+}
+
+.jcarousel-item h3,.jcarousel-item p {
+	margin: 0;
+	font-size: 90%;
+}
+
+.jcarousel-next-vertical {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 120px;
+	height: 14px;
+	cursor: hand;
+	border-top: 1px solid #fff;
+	background: #379be9 url(../../images/arrow-down.gif) no-repeat center;
+	margin: 0px;
+	cursor: hand;
+}
+
+.jcarousel-next-disabled-vertical {
+	cursor: default;
+	opacity: .5;
+	-moz-opacity: .5;
+	filter: alpha(opacity =50);
+	margin: 0px;
+}
+
+.jcarousel-prev-vertical {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 14px;
+	cursor: hand;
+	border-bottom: 1px solid #fff;
+	background: #379be9 url(../../images/arrow-up.gif) no-repeat center;
+	margin: 0px;
+}
+
+.jcarousel-prev-disabled-vertical {
+	cursor: default;
+	opacity: .5;
+	-moz-opacity: .5;
+	filter: alpha(opacity=50);
+	margin: 0px;
+}
+
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: 75px;
+}
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
